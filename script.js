@@ -20,6 +20,15 @@ gridContainer.setAttribute("class", "grid-container");
 gridContainer.style.width = `${sketchBoardWidth}px`;
 container.appendChild(gridContainer);
 
+// Change layout button event listener
+customizeBtn.addEventListener("click", () => {
+  let numOfSquaresOnOneSide = prompt(
+    "Enter the number of squares you want on one side:"
+  );
+  if (numOfSquaresOnOneSide > 100) return;
+  createGrid(numOfSquaresOnOneSide);
+});
+
 function createGrid(numOfSquaresOnOneSide) {
   // Remove previous html
   gridContainer.innerHTML = "";
