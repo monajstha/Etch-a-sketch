@@ -29,6 +29,15 @@ customizeBtn.addEventListener("click", () => {
   createGrid(numOfSquaresOnOneSide);
 });
 
+function generateRandomColors() {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 function createGrid(numOfSquaresOnOneSide) {
   // Remove previous html
   gridContainer.innerHTML = "";
@@ -46,7 +55,7 @@ function createGrid(numOfSquaresOnOneSide) {
 
     // change colour on hover
     grid.addEventListener("mouseover", () => {
-      grid.style.backgroundColor = "red";
+      grid.style.backgroundColor = generateRandomColors();
     });
 
     gridContainer.appendChild(grid);
