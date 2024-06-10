@@ -34,7 +34,7 @@ container.appendChild(gridContainer);
 // Change layout button event listener
 customizeBtn.addEventListener("click", () => {
   let numOfSquaresOnOneSide = prompt(
-    "Enter the number of squares you want on one side:"
+    "Enter the number of squares you want on each side:"
   );
   if (numOfSquaresOnOneSide > 100) return;
   createGrid(numOfSquaresOnOneSide);
