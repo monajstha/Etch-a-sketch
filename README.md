@@ -2,7 +2,8 @@
 Etch a Sketch
 </h1>
 <p>
-A simple sketchboard that allows you to sketch, erase and change the layout of the board.
+A simple sketchboard that allows you to sketch, erase and change the layout of the board. <br> <br>
+  <a href="https://monajstha.github.io/Etch-a-sketch/">Live Preview</a>
 </p>
 <h2>Instructions to use the sketchboard</h2>
 <ul>
